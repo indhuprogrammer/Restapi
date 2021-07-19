@@ -1,0 +1,187 @@
+<link rel="stylesheet" href="assets/css/base.css?v=3.2" type="text/css" />
+<link rel="stylesheet" href="assets/css/datatable.css" type="text/css" />
+<style>
+.hide-calendar .ui-datepicker-calendar { display: none; }
+button.ui-datepicker-current { display: none; }
+.ui-datepicker-calendar { display: none; }
+.dept_section{ width:100%; float:left; margin:20px 0 0 0; }
+.dept_section div{ width:49%; }
+.dept_section div:first-child{ margin-right:2% }
+table.bu-tbl th{ text-align:center; }
+table.bu-tbl{ width:70%; }
+table.bu-tbl-inr th{ text-align:center; }
+.clearfix{ clear: both;}
+.drill-data th, tr.row-header td {
+  background: url(../img/toolbar_hover.png) repeat-x scroll 0 bottom orange;
+    border: 1px solid white;
+    color: #FFFFFF;
+}
+.filter-box th, tr.row-header td {
+  background: url(../img/toolbar_hover.png) repeat-x scroll 0 bottom grey;
+    border: 1px solid grey;
+    color: #FFF;
+}
+select.width200px, select{
+    width:170px !important;
+}
+</style>
+<div id="content">
+    <div class="inner"> 
+        <div id="default_view">
+            <h4>2021 - Month wise Employee Engagement Meter</h4>
+                <table cellspacing="0" cellpadding="0" border="0" class="data-table filter-box">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%;">Entity</th>								
+                            <th style="width: 15%;">Business Unit</th>	
+                            <th style="width: 15%;">Department</th>								
+                            <th style="width: 15%;">Practice</th>	
+                            <th style="width: 15%;">Skill</th>	
+                            <th style="width: 15%;">Geography / Region</th>
+                            <th style="width: 15%;"></th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align:center;">
+                    <tr>	
+                        <td >
+                          <select title="Select Business Unit" id="business_unit_id" multiple="multiple" name="business_unit_id[]" >
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>Singapore</option>
+                            <option>US</option>
+                          </select>
+                        </td>
+                        <td>
+                            <select title="Select Department" id="department_id_fk" multiple="multiple" name="department_ids[]">
+                                <option selected="selected">ITS</option>
+                                <option>ITES</option>
+                                <option>Support Services</option>
+                                <option>Management</option>
+                            </select>
+                        </td>
+                        <td >
+                          <select title="Select Business Unit" id="business_unit_id" multiple="multiple" name="business_unit_id[]" >
+                              <option selected="selected">eADS</option>
+                              <option>ERP</option>
+                          </select>
+                        </td>
+                        <td>
+                                <select title="Select Department" id="department_id_fk" multiple="multiple" name="department_ids[]">
+                                    <option>Embedded</option>
+                                    <option>Emerging Technologies</option>
+                                    <option>Information security</option>
+                                    <option selected="selected">Microsoft technologies</option>
+                                </select>
+                        </td>
+                        <td >
+                          <select title="Select Business Unit" id="business_unit_id" multiple="multiple" name="business_unit_id[]" >
+                                <option>.Net</option>
+                                <option>Filemaker Pro</option>
+                                <option>Sharepoint</option>
+                                <option>Web designing</option>
+                          </select>
+                        </td>
+                        <td>
+                            <select title="Select Department" id="department_id_fk" multiple="multiple" name="department_ids[]">
+                                <option>Asiapac</option>
+                                <option>Australia</option>
+                                <option>BPO</option>
+                                <option>Chip Design</option>
+                            </select>
+                        </td>
+                        <td>
+                                <input type="reset" class="positive input-font" name="advance" id="filter_reset" value="Reset" />
+                                <input type="submit" class="positive input-font" name="advance" id="advance" value="Search" />
+                        </td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+
+        <div id="default_view">
+                    <table cellspacing="0" cellpadding="0" border="0" class="data-table drill-data">
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>January</th>
+                            <th>February</th>
+                            <th>March</th>
+                            <th>April</th>
+                            <th>May</th>
+                            <th>June</th>
+                            <th>July</th>
+                            <th>August</th>
+                            <th>September</th>
+                            <th>October</th>
+                            <th>November</th>
+                            <th>December</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align:center;">
+                    <tr>
+                        <td>Pushparaj.N</td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="yellow"></td>
+                        <td></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="yellow"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Venkatachalam.R</td>
+                        <td></td>
+                        <td></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="yellow"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Victoria.R</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="yellow"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ramya.C</td>
+                        <td></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="green"></td>
+                        <td bgcolor="yellow"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</div>
+<script type="text/javascript" src="assets/js/projects/bu_changes.js"></script>
